@@ -1,0 +1,152 @@
+body {
+    background-color: #1e1e2e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+  
+  .navbar {
+    background-color: #2b2b3a;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #7bc47f !important;
+  }
+
+  .logo-image {
+    border-radius: 10%;
+}
+  
+  .highlight {
+    color: #7bc47f;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .hero-section h1,
+  .hero-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .custom-btn {
+    background-color: #7bc47f;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+  }
+  
+  .custom-btn:hover {
+    background-color: #6aa36f;
+    color: #fff;
+  }
+  
+  .form-section {
+    background-color: #2b2b3a;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .form-section label {
+    color: #fff;
+  }
+  
+  .form-section input,
+  .form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #4CAF50;
+  }
+  
+  .form-section button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .form-section .messages {
+    color: green;
+    margin-top: 10px;
+  }
+  
+  .test-section {
+    background-color: #2b2b3a;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .test-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background: #37374e;
+    border-radius: 8px;
+  }
+  
+  .emoji-box {
+    font-size: 2rem;
+  }
+  
+  footer {
+    color: #9ca3af;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .contact-link {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #7bc47f;
+  }
+  
+  .result-section {
+    background-color: #2b2b3a;
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.result-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.result-section h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.btn-custom {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-custom:hover {
+    background-color: #6aa36f;
+    color: white;
+}

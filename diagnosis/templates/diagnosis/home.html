@@ -1,0 +1,45 @@
+{% extends 'diagnosis/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="hero-section">
+      <div class="container">
+        <h1>
+          Early Detection of Breast Cancer <span class="highlight">Saves Lives!</span>
+        </h1>
+        <p class="mt-3">
+          Our AI-powered diagnosis tool achieves an accuracy of
+          <span class="highlight">97%</span> to help you take proactive action.
+        </p>
+        <a href="{% url 'test' %}"><button class="btn custom-btn mt-4">
+        Take the Test
+        </button></a>
+      </div>
+    </section>
+
+    <!-- Test Section -->
+    <section class="test-section">
+      <h4 class="mb-3">How to Detect Breast Cancer at Home</h4>
+      <div class="test-check">
+        <div class="d-flex align-items-center">
+          <strong>Feel for lumps in your breasts or underarms</strong>
+        </div>
+      </div>
+      <div class="test-check">
+        <div class="d-flex align-items-center">
+          <strong>Notice any changes in the appearance of your skin or nipples</strong>
+        </div>
+      </div>
+      <div class="test-check">
+        <div class="d-flex align-items-center">
+          <strong>Check for unusual swelling, pain or discomfort in your breast area</strong>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <p>
+            For expert advice, <a href="{% url 'consult_doctor' %}" class="contact-link">get in touch</a> with a doctor now!
+        </p>
+    </footer>
+{% endblock %}

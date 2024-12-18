@@ -1,0 +1,49 @@
+{% extends 'diagnosis/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="hero-section">
+        <div class="container">
+            <h2>
+                Early Detection of Breast Cancer <span class="highlight">Saves Lives!</span>
+            </h2>
+            <p class="mt-3">
+                Use our tool to predict breast cancer risk based on key diagnostic features.
+            </p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h4 class="mb-3">Enter Patient Data for Diagnosis</h4>
+        <form method="POST" action="{% url 'test' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>Mean Radius:</label>
+                <input type="text" class="form-control" name="mean_radius" required>
+            </div>
+            <div class="form-group">
+                <label>Mean Texture:</label>
+                <input type="text" class="form-control" name="mean_texture" required>
+            </div>
+            <div class="form-group">
+                <label>Mean Perimeter:</label>
+                <input type="text" class="form-control" name="mean_perimeter" required>
+            </div>
+            <div class="form-group">
+                <label>Mean Area:</label>
+                <input type="text" class="form-control" name="mean_area" required>
+            </div>
+            <div class="form-group">
+                <label>Mean Smoothness:</label>
+                <input type="text" class="form-control" name="mean_smoothness" required>
+            </div>
+            <button type="submit" class="btn custom-btn">Predict</button>
+        </form>        
+    </section>
+
+    <footer>
+        <p>
+            For expert advice, <a href="{% url 'consult_doctor' %}" class="contact-link">get in touch</a> with a doctor now!
+        </p>
+    </footer>
+ {% endblock %}
